@@ -1,0 +1,15 @@
+{
+	"name": "professional-portfolio",
+	"dependencies": {
+		"express": "^4.17.1",
+		"helmet": "^4.4.1"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}

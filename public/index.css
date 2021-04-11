@@ -1,0 +1,223 @@
+:root {
+  --navbar-color: rgba(51, 109, 177, 1);
+  --main-theme-color: rgb(74, 174, 255);
+  --text-color: rgba(0, 0, 0, 0);
+  --icon-color-hover: rgb(33, 71, 114);
+  --navbar-list-color: rgba(255, 255, 255, 0.6);
+  --navbar-list-color-hover: rgba(255, 255, 255, 0.8);
+  --welcome-text-color: rgba(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* (100% / 16px) * 10 = 62.5%. Now, 1rem = 10px b/c 62.5% = 10px.*/
+  font-size: 62.5%;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: var(--navbar-color);
+}
+
+body {
+  font-size: 1.8rem;
+  background: whitesmoke;
+}
+
+.icon {
+  background-color: transparent;
+  padding: 0.8rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  background-color: var(--icon-color-hover);
+}
+
+.nav-social-list {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.nav-social-list li {
+  margin: 0.8rem 0.8rem 0.4rem 0.8rem;
+  list-style: none;
+}
+.nav-link-list {
+  display: flex;
+  margin-right: 1rem;
+}
+.nav-link-list li {
+  margin: 1.5rem;
+  list-style: none;
+}
+
+.navbarLinkOnSite {
+  font-weight: 500;
+  color: var(--welcome-text-color);
+  text-decoration: none;
+}
+.navbarLinks {
+  color: var(--navbar-list-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbarLinks:hover {
+  color: var(--navbar-list-color-hover);
+}
+
+/* Tooltip for color changes */
+#colorThemeButton {
+  position: absolute;
+  top: 20rem;
+  right: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.8);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colorThemeButton:hover {
+  color: var(--welcome-text-color);
+  cursor: pointer;
+}
+
+#tooltipContainer {
+  position: absolute;
+  top: 20rem;
+  right: 0;
+  border-radius: 0.5rem;
+  background-color: rgba(17, 17, 17, 0.9);
+  width: 0;
+  transition: 0.5s;
+}
+
+#tooltipHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: var(--welcome-text-color);
+}
+
+#tooltipExit:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+#row1 {
+  display: flex;
+}
+
+.colorBox {
+  width: 3rem;
+  height: 2rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.colorBox:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+  border: 1px solid var(--welcome-text-color);
+}
+
+#blueColorTheme {
+  background-color: var(--main-theme-color);
+}
+
+#greenColorTheme {
+  background-color: green;
+}
+
+#redColorTheme {
+  background-color: red;
+}
+
+#navyColorTheme {
+  background-color: navy;
+}
+
+#goldColorTheme {
+  background-color: gold;
+}
+
+#silverColorTheme {
+  background-color: silver;
+}
+
+#blackColorTheme {
+  background-color: black;
+}
+
+#magentaColorTheme {
+  background-color: magenta;
+}
+
+/* Welcome Section */
+#welcomeSection {
+  background-color: var(--main-theme-color);
+  display: flex;
+  padding: 5rem 10rem 5rem 10rem;
+  font-weight: 300;
+}
+
+#headshot {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 0.2rem;
+}
+
+#welcomeMessageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+
+#welcomeHeader {
+  color: var(--welcome-text-color);
+}
+
+#name {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.welcomeLink {
+  color: var(--navbar-color);
+  text-decoration: none;
+}
+
+.welcomeLink:hover {
+  color: var(--welcome-text-color);
+  text-decoration: underline;
+}
+
+#welcomeButton {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  max-width: 12rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--welcome-text-color);
+}
+
+#welcomeButton:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
