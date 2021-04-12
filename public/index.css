@@ -132,6 +132,10 @@ section {
   color: var(--welcome-text-color);
 }
 
+#tooltipExit {
+  font-size: 1.9rem;
+}
+
 #tooltipExit:hover {
   cursor: pointer;
   filter: brightness(80%);
@@ -164,7 +168,7 @@ section {
 }
 
 #greenColorTheme {
-  background-color: green;
+  background-color: #28a745;
 }
 
 #redColorTheme {
@@ -201,7 +205,7 @@ section {
 
 #headshot {
   width: 20rem;
-  height: 25rem;
+  height: 23rem;
   border-radius: 0.2rem;
 }
 
@@ -264,6 +268,10 @@ section {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+
+#skillsDescription {
+  font-weight: 250;
 }
 
 #resumeLink {

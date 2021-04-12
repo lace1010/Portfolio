@@ -29,7 +29,10 @@ $("nav").mouseleave(() => {
 
 // color theme button handlers
 $("#colorThemeButton").click(() => {
-  $("#tooltipContainer").css({ padding: "1rem", width: "15rem" });
+  $("#tooltipContainer").css({
+    padding: "1rem 1.5rem 2rem 1.5rem",
+    width: "15rem",
+  });
   $("#tooltipHeader").append(
     "<span class='colorHeader'>CHOOSE COLOR <i id='tooltipExit' class='fas fa-times-circle' style='margin-left: 1rem'></i></span>"
   );
@@ -46,7 +49,6 @@ let doc = document.documentElement;
 $("#lightBlueColorTheme").click(() => {
   doc.style.setProperty("--navbar-color", "rgba(51, 109, 177, 1)");
   doc.style.setProperty("--theme-color", "rgb(74, 174, 255)");
-  doc.style.setProperty("--icon-color-hover", "rgb(33, 71, 114)");
 
   $("#lightBlueColorTheme").addClass("selected");
   $("#greenColorTheme").removeClass("selected");
@@ -58,7 +60,6 @@ $("#lightBlueColorTheme").click(() => {
 $("#greenColorTheme").click(() => {
   doc.style.setProperty("--navbar-color", "green");
   doc.style.setProperty("--theme-color", "lightgreen");
-  doc.style.setProperty("--icon-color-hover", "darkgreen");
 
   $("#greenColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");
@@ -73,7 +74,6 @@ $("#redColorTheme").click(() => {
     "--theme-color",
     "rgb(255, 147, 147)"
   );
-  document.documentElement.style.setProperty("--icon-color-hover", "darkred");
 
   $("#redColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");
@@ -85,7 +85,6 @@ $("#redColorTheme").click(() => {
 $("#blueColorTheme").click(() => {
   document.documentElement.style.setProperty("--navbar-color", "navy");
   document.documentElement.style.setProperty("--theme-color", "blue");
-  document.documentElement.style.setProperty("--icon-color-hover", "darkgrey");
 
   $("#blueColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");
