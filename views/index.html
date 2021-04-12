@@ -22,45 +22,39 @@
   </head>
 
   <nav id="navbar">
-    <ul class="nav-social-list">
-      <li>
-        <a href="https://www.facebook.com/hunter.s.lacefield/" target="_blank">
-          <img class="icon" src="https://i.ibb.co/T1PKNHn/facebook-logo.png" 
-          alt="facebook icon"/>
-        </a>
-      </li>
-			<li>
-        <a href="https://www.linkedin.com/in/hunter-lacefield-871995115/"><img class="icon" src="https://i.ibb.co/Y20kC9g/linkedin-logo.png"
-        alt="linkedin icon"/>
-        </a
-      ></li>
-      <li>
-        <a href="https://github.com/lace1010"><img class="icon" src="https://i.ibb.co/DQL0png/github-logo.png"
-        alt="github icon">
-        </a>
-      </li>
-    </ul>
+    <div class="nav-social-list">
+      <a href="https://www.facebook.com/hunter.s.lacefield/" target="_blank">
+        <img class="icon" src="https://i.ibb.co/T1PKNHn/facebook-logo.png" alt="facebook icon"/>
+      </a>
+      <a href="https://www.linkedin.com/in/hunter-lacefield-871995115/">
+        <img class="icon" src="https://i.ibb.co/Y20kC9g/linkedin-logo.png" alt="linkedin icon"/>
+      </a>
+      <a href="https://github.com/lace1010">
+        <img class="icon" src="https://i.ibb.co/DQL0png/github-logo.png" alt="github icon">
+      </a>
+    </div>
 
-		<ul class="nav-link-list">
-			<li><a class="navbarLinkOnSite" href="#">ABOUT</a></li>
-			<li><a class="navbarLinks" href="#">PROJECTS</a></li>
-			<li><a class="navbarLinks" href="#">RESUME</a></li>
-      <li><a class="navbarLinks" href="#">CONTACT</a></li>
-      <li><a class="navbarLinks" href="#">PAGES</a></li>
-		</ul>
+		<div class="nav-link-list">
+			<a class="navbarLinks" id="navbarLinkSelected" href="#">ABOUT</a>
+			<a class="navbarLinks" href="#">PROJECTS</a>
+			<a class="navbarLinks" href="#">RESUME</a>
+      <a class="navbarLinks" href="#">CONTACT</a>
+      <a class="navbarLinks" href="#">PAGES</a>
+      <span id="navIndicator"></span>
+    </div>
 	</nav>
+
+
   <i id="colorThemeButton" class="fas fa-cogs"></i>
     
   <div id="tooltipContainer">
-    <p id="tooltipHeader">
-      CHOOSE COLOR <i id="tooltipExit" class="fas fa-times-circle"></i>
-    </p>
+    <p id="tooltipHeader"></p>
     <div id="colorBoxContainer">
       <div id="row1" class="colorBoxRows">
-        <div id="blueColorTheme" class="colorBox"></div>
+        <div id="lightBlueColorTheme" class="colorBox selected"></div>
         <div id="greenColorTheme" class="colorBox"></div>
         <div id="redColorTheme" class="colorBox"></div>
-        <div id="navyColorTheme" class="colorBox"></div>
+        <div id="blueColorTheme" class="colorBox"></div>
       </div>
       <div id="row1" class="colorBoxRows">
         <div id="goldColorTheme" class="colorBox"></div>
@@ -78,10 +72,68 @@
       <p id="welcomeHeader">Hello, my name is <br> 
         <span id="name">Hunter Lacefield</span><br>
         I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. 
-        Want to know how I may help your project? Check out my project <a class="welcomeLink" href="#">case studies</a> and <a class="welcomeLink" href="#">resume</a>.
+        Want to know how I may help your project? Check out my project <a class="welcomeLink" href="#">case studies</a> 
+        and <a class="welcomeLink" href="#">resume</a>.
       </p>
       <button id="welcomeButton">Hire Me</button>
     </div> 
+  </section>
+
+  <section id="skillSection">
+      <div id="skillsOverview">
+        <h2 id="skillsHeader">Skills Overview</h2>
+        <p id=skillsDescription>I have more than 8 years' experience building rich web applications for clients all over 
+          the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about 
+          my experience? <a id="resumeLink" href="#">Check out my online resume.</a>
+        </p>
+      </div>
+   
+
+    <div id="skillDisplayContainer">
+      <div class="skillDisplay">
+        <div class="skillIconContainer">
+          <i class="fas fa-laptop skillIcon"></i>
+        </div>
+
+        <h2>Frontend</h2>
+        <ul>
+          <li><i class="fas fa-check"></i>Javascript</li>
+          <li><i class="fas fa-check"></i>jQuery</li>
+          <li><i class="fas fa-check"></i>React/Redux</li>
+          <li><i class="fas fa-check"></i>HTML/CSS/Bootstrap</li>
+          <li><i class="fas fa-check"></i>D3.js</li>
+        </ul>
+      </div>
+      <div id="skillDisplayMiddle" class="skillDisplay">
+       <div class="skillIconContainer">
+        <i class="fas fa-database skillIcon"></i>
+       </div>
+
+       <h2>Backend</h2>
+       <ul>
+        <li><i class="fas fa-check"></i>Node.js</li>
+        <li><i class="fas fa-check"></i>Express</li>
+        <li><i class="fas fa-check"></i>MongoDb</li>
+        <li><i class="fas fa-check"></i>Information Security</li>
+      </ul>
+      </div>
+      <div class="skillDisplay">
+       <div class="skillIconContainer">
+        <i class="fas fa-tools skillIcon"></i>
+       </div>
+       <h2>Others</h2>
+       <ul>
+        <li><i class="fas fa-check"></i>Sales</li>
+        <li><i class="fas fa-check"></i>Management</li>
+        <li><i class="fas fa-check"></i>Teaching</li>
+        <li><i class="fas fa-check"></i>Mathematics</li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+
   </section>
  
   <!-- Jquery script link -->
