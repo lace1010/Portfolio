@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Hunter Lacefield's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- add an icon for site in the following href to replace fcc icon-->
     <link
@@ -13,10 +16,13 @@
 
     <!-- Font awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owl.carousel.css"/>
+    <link rel="stylesheet" href="owl.theme.default.min.css"/>
     <link rel="stylesheet" href="index.css" />
     
   </head>
@@ -65,7 +71,7 @@
     </div>
   </div>
 
-  <section id="welcomeSection">
+  <section id="welcomeSectionContainer">
     <img id="headshot" src="https://i.ibb.co/8dh8bHY/Professional-Headshot.jpg"
         alt="professional headshot">
     <div id="welcomeMessageContainer">
@@ -79,7 +85,8 @@
     </div> 
   </section>
 
-  <section id="skillSection">
+  <!-- Skill Section -->
+  <section id="skillSectionContainer">
     <div id="skillsOverview">
       <h2 id="skillsHeader">Skills Overview</h2>
       <p id=skillsDescription>I have experience building rich web applications from around the world. Below is a quick overview of my 
@@ -131,11 +138,138 @@
     </div>
   </section>
 
-  <section id="testimonials">
+  <!-- Testimonial Section -->
+  <section id="testimonialsContainer">
+    <h1 id="testimonialHeader">Great clients I've worked with</h1>
+    
+    <div class="testimonialsCarousel owl-carousel owl-carousel1 owl-theme">
+      <div class="singleTestimonial">
+        <img class="testimonialImage" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="John Doe">
+        <div class="testimonialText">
+          <h2 class="testimonialName">John Doe</h2>
+          <h3>Software Engineer</h3>
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p class="testimonialText"><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+          </p>
+        </div>
+      </div>
+      
+      <div class="singleTestimonial">
+        <img class="testimonialImage" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="Jane Doe">
+        <div class="testimonialText">
+          <h2 class="testimonialName">Jane Doe</h2>
+          <h3>Software Engineer</h3>
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+          </p>
+        </div>
+      </div>
+      
+    <div class="singleTestimonial">
+      <img class="testimonialImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJSl_0b_Q5i9_fh-E-pBp2bqCUkT18wP_MA&usqp=CAU" alt="Greg Doe">
+      <div class="testimonialText">
+        <h2 class="testimonialName">Greg Doe</h2>
+        <h3>Software Engineer</h3>
+        <p>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+        </p>
+      </div>
+    </div>
+      
+  <div class="singleTestimonial">
+    <img class="testimonialImage" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="June Doe">
+    <div class="testimonialText">
+      <h2 class="testimonialName">June Doe</h2>
+      <h3>Software Engineer</h3>
+      <p>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </p>
+      <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+      </p>
+    </div>
+  </div>
+      
+  <div class="singleTestimonial">
+    <img class="testimonialImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Da-G9UKItf7H4MWoP-UUHu2B4n3F8nR-pg&usqp=CAU" alt="Holly Doe">
+    <div class="testimonialText">
+      <h2 class="testimonialName">Holly Doe</h2>
+      <h3>Software Engineer</h3>
+      <p>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </p>
+      <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+      </p>
+      </div>
+    </div>
+  </div>
+</section> 
 
+  <!-- Featured Projects Section -->
+  <section id="featuredProjectsContainer">
+    <h1 id="featuredProjectsHeader">Featured Projects</h1>
+
+    <div id="projectDisplayContainer">
+      <div class="projectDisplay">
+        <img src="#" alt="Anonymous Board Messenger">
+        <div>
+         <h2>Anonymous Board Messenger</h2>
+        </div>
+      </div>
+      
+      <div id="projectDisplayMiddle" class="projectDisplay">
+        <div class="projectDisplay">
+          <img src="#" alt="Sudoku Solver">
+          <div>
+           <h2>Sudoku Solver</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectDisplay">
+      <img src="#" alt="Issue Tracker">
+      <div>
+        <h2>Issue Tracker</h2>
+      </div>
+       
+      </div>
+    </div>
   </section>
  
   <!-- Jquery script link -->
   <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+
+  <!-- jQuerry carousel links -->
+  <script src="owl.carousel.js"></script>
   <script src="index.js"></script>
 </html>

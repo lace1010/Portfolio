@@ -31,11 +31,13 @@ $("nav").mouseleave(() => {
 $("#colorThemeButton").click(() => {
   $("#tooltipContainer").css({
     padding: "1rem 1.5rem 2rem 1.5rem",
-    width: "15rem",
+    width: "18rem",
   });
-  $("#tooltipHeader").append(
-    "<span class='colorHeader'>CHOOSE COLOR <i id='tooltipExit' class='fas fa-times-circle' style='margin-left: 1rem'></i></span>"
-  );
+  setTimeout(() => {
+    $("#tooltipHeader").append(
+      "<span class='colorHeader'>CHOOSE COLOR <i id='tooltipExit' class='fas fa-times-circle' style='margin-left: 1rem'></i></span>"
+    );
+  }, 400);
 });
 
 // need to use onclick here because we are working with an appended element
@@ -91,3 +93,39 @@ $("#blueColorTheme").click(() => {
   $("#greenColorTheme").removeClass("selected");
   $("#redColorTheme").removeClass("selected");
 });
+
+// testimonial owl carousel
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  dotsEach: true,
+  dots: true,
+  center: true,
+  nav: true,
+  navText: [
+    "<i class='fa fa-chevron-left'></i>",
+    "<i class='fa fa-chevron-right'></i>",
+  ],
+  slideTransition: "ease-in",
+  responsiveClass: true,
+  autoplay: true,
+  autoplayTimeout: 8000,
+  autoplayHoverPause: true,
+  mouseDrag: true,
+  responsive: {
+    0: {
+      items: 1,
+      stagePadding: 40,
+    },
+    680: {
+      items: 1,
+      stagePadding: 90,
+    },
+    1125: {
+      stagePadding: 0,
+      items: 3,
+    },
+  },
+});
+
+console.log($(window).width(), "<= width");
