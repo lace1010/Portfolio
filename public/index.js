@@ -51,6 +51,7 @@ let doc = document.documentElement;
 $("#lightBlueColorTheme").click(() => {
   doc.style.setProperty("--navbar-color", "rgba(51, 109, 177, 1)");
   doc.style.setProperty("--theme-color", "rgb(74, 174, 255)");
+  doc.style.setProperty("--theme-color-overlay", "rgba(51, 139, 255, .9)");
 
   $("#lightBlueColorTheme").addClass("selected");
   $("#greenColorTheme").removeClass("selected");
@@ -62,6 +63,7 @@ $("#lightBlueColorTheme").click(() => {
 $("#greenColorTheme").click(() => {
   doc.style.setProperty("--navbar-color", "green");
   doc.style.setProperty("--theme-color", "lightgreen");
+  doc.style.setProperty("--theme-color-overlay", "rgba(144, 238, 144, .9)");
 
   $("#greenColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");
@@ -71,11 +73,9 @@ $("#greenColorTheme").click(() => {
 
 //Changing to red color theme
 $("#redColorTheme").click(() => {
-  document.documentElement.style.setProperty("--navbar-color", "red");
-  document.documentElement.style.setProperty(
-    "--theme-color",
-    "rgb(255, 147, 147)"
-  );
+  doc.style.setProperty("--navbar-color", "red");
+  doc.style.setProperty("--theme-color", "rgb(255, 147, 147)");
+  doc.style.setProperty("--theme-color-overlay", "rgb(255, 147, 147, .9)");
 
   $("#redColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");
@@ -85,8 +85,9 @@ $("#redColorTheme").click(() => {
 
 //Changing to navy color theme
 $("#blueColorTheme").click(() => {
-  document.documentElement.style.setProperty("--navbar-color", "navy");
-  document.documentElement.style.setProperty("--theme-color", "blue");
+  doc.style.setProperty("--navbar-color", "navy");
+  doc.style.setProperty("--theme-color", "blue");
+  doc.style.setProperty("--theme-color-overlay", "rgb(0, 0, 255, .8)");
 
   $("#blueColorTheme").addClass("selected");
   $("#lightBlueColorTheme").removeClass("selected");

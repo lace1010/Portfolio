@@ -42,10 +42,9 @@
 
 		<div class="nav-link-list">
 			<a class="navbarLinks" id="navbarLinkSelected" href="#">ABOUT</a>
-			<a class="navbarLinks" href="#">PROJECTS</a>
-			<a class="navbarLinks" href="#">RESUME</a>
-      <a class="navbarLinks" href="#">CONTACT</a>
-      <a class="navbarLinks" href="#">PAGES</a>
+			<a class="navbarLinks" href="/projects.html">PROJECTS</a>
+			<a class="navbarLinks" href="/resume.html">RESUME</a>
+      <a class="navbarLinks" href="/contact.html">CONTACT</a>
       <span id="navIndicator"></span>
     </div>
 	</nav>
@@ -72,26 +71,25 @@
   </div>
 
   <section id="welcomeSectionContainer">
-    <img id="headshot" src="https://i.ibb.co/8dh8bHY/Professional-Headshot.jpg"
-        alt="professional headshot">
+    <img id="headshot" src="https://i.ibb.co/8dh8bHY/Professional-Headshot.jpg" alt="professional headshot">
     <div id="welcomeMessageContainer">
       <p id="welcomeHeader">Hello, my name is <br> 
         <span id="name">Hunter Lacefield</span><br>
         I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. 
-        Want to know how I may help your project? Check out my project <a class="welcomeLink" href="#">case studies</a> 
-        and <a class="welcomeLink" href="#">resume</a>.
+        Want to know how I may help your project? Check out my project <a class="welcomeLink" href="/projects.html">case studies</a> 
+        and <a class="welcomeLink" href="/resume.html">resume</a>.
       </p>
-      <button id="welcomeButton">Hire Me</button>
+      <a class="welcomeAndFooterButton" href="/contact.html">Hire Me</a>
     </div> 
   </section>
 
   <!-- Skill Section -->
   <section id="skillSectionContainer">
     <div id="skillsOverview">
-      <h2 id="skillsHeader">Skills Overview</h2>
+      <h2 class="sectionalHeader">Skills Overview</h2>
       <p id=skillsDescription>I have experience building rich web applications from around the world. Below is a quick overview of my 
         main technical skill sets and tools I use. Want to find out more about 
-        my experience? <a id="resumeLink" href="#">Check out my online resume.</a>
+        my experience? <a id="resumeLink" href="/resume.html">Check out my online resume.</a>
       </p>
     </div>
 
@@ -110,7 +108,7 @@
           <li><i class="fas fa-check"></i>D3.js</li>
         </ul>
       </div>
-      <div id="skillDisplayMiddle" class="skillDisplay">
+      <div class="skillDisplay">
        <div class="skillIconContainer">
         <i class="fas fa-database skillIcon"></i>
        </div>
@@ -140,7 +138,7 @@
 
   <!-- Testimonial Section -->
   <section id="testimonialsContainer">
-    <h1 id="testimonialHeader">Great clients I've worked with</h1>
+    <h1 class="sectionalHeader">Great clients I've worked with</h1>
     
     <div class="testimonialsCarousel owl-carousel owl-carousel1 owl-theme">
       <div class="singleTestimonial">
@@ -237,34 +235,99 @@
 
   <!-- Featured Projects Section -->
   <section id="featuredProjectsContainer">
-    <h1 id="featuredProjectsHeader">Featured Projects</h1>
+    <h1 class="sectionalHeader">Featured Projects</h1>
 
     <div id="projectDisplayContainer">
       <div class="projectDisplay">
-        <img src="#" alt="Anonymous Board Messenger">
-        <div>
-         <h2>Anonymous Board Messenger</h2>
-        </div>
-      </div>
-      
-      <div id="projectDisplayMiddle" class="projectDisplay">
-        <div class="projectDisplay">
-          <img src="#" alt="Sudoku Solver">
-          <div>
-           <h2>Sudoku Solver</h2>
+        <a class="imageContainer" href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank">
+          <img class="projectImage" src="https://i.ibb.co/8r1hspx/Anonymous-Board-Messenger.png" alt="Anonymous Board Messenger">
+          
+          <div class="darkImageOverlay"></div>
+
+          <div class="imageOverlay">
+            <h3>Anonymous Board Messenger</h3>
+            <p class="projectDetailsText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+            </p>
           </div>
+        </a>
+        <a class="projectHeader"href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank">
+          <h2>Anonymous Board Messenger</h2>
+        </a>
+        <div class="projectLanguageContainer">
+          <p class="projectLanguage">MongoDB</p>
+          <p class="projectLanguage">Express</p>
+          <p class="projectLanguage">Node.js</p>
+          <p class="projectLanguage">HTML/CSS</p>
         </div>
       </div>
 
       <div class="projectDisplay">
-      <img src="#" alt="Issue Tracker">
-      <div>
-        <h2>Issue Tracker</h2>
+        <a class="imageContainer" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank">
+          <img class="projectImage" src="https://i.ibb.co/xhMXjdR/Issue-Tracker-Home.png" alt="Issue Tracker">
+          <div class="imageOverlay">
+            <h3>Issue Tracker</h3>
+            <p class="projectDetailsText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+            </p>
+          </div>
+        </a>
+
+        <a class="projectHeader" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank">
+          <h2>Issue Tracker</h2>
+        </a>
+        <div class="projectLanguageContainer">
+          <p class="projectLanguage">MongoDB</p>
+          <p class="projectLanguage">Express</p>
+          <p class="projectLanguage">Node.js</p>
+          <p class="projectLanguage">HTML/CSS</p>
+        </div>
+         
       </div>
-       
-      </div>
+      
+      <div class="projectDisplay">
+        <a class="imageContainer" href="https://react-calculator-with-formula.herokuapp.com" target="_blank">
+          <img class="projectImage" src="https://i.ibb.co/6JqDzLw/Javascript-Calculator-React.png" alt="Sudoku Solver">
+          <div class="imageOverlay">
+            <h3>Calculator</h3>
+            <p class="projectDetailsText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst.
+            </p>
+          </div>
+        </a>  
+          <a class="projectHeader" href="https://react-calculator-with-formula.herokuapp.com" target="_blank">
+            <h2>Calculator (React)</h2>
+          </a>
+          <div class="projectLanguageContainer">
+            <p class="projectLanguage">React</p>
+            <p class="projectLanguage">HTML/CSS</p>
+            <p class="projectLanguage">Express</p>
+            <p class="projectLanguage">Node.js</p>
+          </div>
+        </div>
     </div>
+    <a id="projectButton" href="/projects.html">
+      View all Projects <i class = "fa fa-paper-plane"></i>
+    </a>
   </section>
+
+  <footer id="footerContainer">
+    <img id="footerHeadshot" src="https://i.ibb.co/8dh8bHY/Professional-Headshot.jpg" alt="professional headshot">
+    <h2 id="footerHeader">Interested in hiring me for your project?</h2>
+    <p id="footerMessage">
+      Looking for an experienced full-stack developer to build your web app or ship your software product? To start an initial chat, just drop me an email at 
+      <a class="footerLink" href="mailto:lace1010@gmail.com">lace1010@gmail.com</a> a or use the <a class="footerLink" href="/contact.html">form on the contact page</a>.
+    </p>
+    <a class="welcomeAndFooterButton" href="/contact.html">
+      Let's talk
+    </a>
+  </footer>
+  <div id="copyRightContainer">
+    <p>Portfolio Copyright &#169; Yours Truly</p>
+  </div>
  
   <!-- Jquery script link -->
   <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
