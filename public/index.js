@@ -1,4 +1,4 @@
-console.log("connected");
+console.log($(window).width(), "<= width");
 
 // This handles the navbar hover effect
 $("#navIndicator").css({
@@ -128,5 +128,3 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-
-console.log($(window).width(), "<= width");

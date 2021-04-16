@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hunter Lacefield's Contact Page</title>
+    <title>Hunter Lacefield's Projects</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,9 +23,104 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="owl.carousel.css"/>
     <link rel="stylesheet" href="owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
     
   </head>
 
-  <nav>Hello World</nav>
+  <nav id="navbar">
+    <div class="nav-social-list">
+      <a href="https://www.facebook.com/hunter.s.lacefield/">
+        <img class="icon" src="https://i.ibb.co/T1PKNHn/facebook-logo.png" alt="facebook icon"/>
+      </a>
+      <a href="https://www.linkedin.com/in/hunter-lacefield-871995115/">
+        <img class="icon" src="https://i.ibb.co/Y20kC9g/linkedin-logo.png" alt="linkedin icon"/>
+      </a>
+      <a href="https://github.com/lace1010">
+        <img class="icon" src="https://i.ibb.co/DQL0png/github-logo.png" alt="github icon">
+      </a>
+    </div>
+
+		<div class="nav-link-list">
+			<a class="navbarLinks" href="/">ABOUT</a>
+			<a class="navbarLinks" href="/projects.html">PROJECTS</a>
+			<a class="navbarLinks" href="/resume.html">RESUME</a>
+      <a class="navbarLinks" id="navbarLinkSelected" href="#">CONTACT</a>
+      <span id="navIndicator"></span>
+    </div>
+	</nav>
+
+  <i id="colorThemeButton" class="fas fa-cogs"></i>
+    
+  <div id="tooltipContainer">
+    <p id="tooltipHeader"></p>
+    <div id="colorBoxContainer">
+      <div id="row1" class="colorBoxRows">
+        <div id="lightBlueColorTheme" class="colorBox selected"></div>
+        <div id="greenColorTheme" class="colorBox"></div>
+        <div id="redColorTheme" class="colorBox"></div>
+        <div id="blueColorTheme" class="colorBox"></div>
+      </div>
+      <div id="row1" class="colorBoxRows">
+        <div id="goldColorTheme" class="colorBox"></div>
+        <div id="silverColorTheme" class="colorBox"></div>
+        <div id="blackColorTheme" class="colorBox"></div>
+        <div id="magentaColorTheme" class="colorBox"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="welcomeSectionContainer">
+    <h1 id="welcomeHeader">Contact</h1>
+  </section>
+
+  <section id="contactSectionContainer">
+    <img id="headshot" src="https://i.ibb.co/8dh8bHY/Professional-Headshot.jpg" alt="professional Headshot"/>
+    <div id="contactMessageContainer">
+      <div id="messageContainer">
+        <p id="message"> I'm currently taking on freelance work. If you are interested in hiring me for your project 
+          please use the form below to get in touch. Want to know how I work and what I can offer? Check out my 
+          <a href="/projects.html">project case studies</a> and <a href="/resume.html">resume.</a>
+        </p>
+
+        <h3>You can also find me on the following channels</h3>
+
+        <div id="iconLinksContainer">
+          <a href="https://www.facebook.com/hunter.s.lacefield/">
+            <img class="iconInContact" src="https://i.ibb.co/T1PKNHn/facebook-logo.png" alt="facebook icon"/>
+          </a>
+          <a href="https://www.linkedin.com/in/hunter-lacefield-871995115/">
+            <img class="iconInContact" src="https://i.ibb.co/Y20kC9g/linkedin-logo.png" alt="linkedin icon"/>
+          </a>
+          <a href="https://github.com/lace1010">
+            <img class="iconInContact" src="https://i.ibb.co/DQL0png/github-logo.png" alt="github icon">
+          </a>
+          <a href="https://www.instagram.com/hunterlacefield/">
+            <img class="iconInContact" src="https://i.ibb.co/bXC5VTD/instagram-logo.png" alt="Instagram icon">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="formSectionContainer">
+      <h1 id="formHeader">Get In Touch</h1>
+      <form id="form" method="POST">
+        <div id="inputsContainer">
+          <input id="name" type="text" placeholder="Name" required>
+          <input id="email" type="email" placeholder="Email" required>
+        </div>
+        <textarea type="text" placeholder="Enter your message" required></textarea>
+        <button type="submit" value="submit">Send It</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="copyRightContainer">
+    <p>Portfolio Copyright &#169; Yours Truly</p>
+  </div>
+   <!-- Jquery script link -->
+   <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="index.js"></script> <!-- Need this for navbar hover and color theme still -->
+  <script src="contact.js"></script>
 </html>
