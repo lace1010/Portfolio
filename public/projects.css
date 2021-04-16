@@ -365,6 +365,12 @@ section {
   color: var(--welcome-text-color);
 }
 
+@media (max-width: 1120px) {
+  .projectHeader h2 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 1000px) {
   #projectDisplayContainer {
     grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
