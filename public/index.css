@@ -38,7 +38,7 @@ section {
 .icon {
   background-color: transparent;
   padding: 0.8rem;
-  width: 3.5rem;
+  width: 2rem;
   border-radius: 1.3rem;
   transition: all 0.5s ease-in-out;
 }
@@ -73,6 +73,7 @@ section {
   color: var(--navbar-list-color);
   text-decoration: none;
   font-weight: 300;
+  transition: all 0.3s ease;
 }
 
 #navbarLinkSelected {
@@ -501,6 +502,7 @@ section {
 
 .projectHeader {
   display: block;
+  text-decoration: none;
   color: var(--text-color);
   text-align: center;
   padding: 1rem 1rem 0.5rem 1rem;
@@ -508,6 +510,7 @@ section {
 
 .projectHeader:hover {
   color: var(--text-color);
+  text-decoration: underline;
 }
 
 .projectLanguageContainer {
@@ -587,6 +590,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
+  height: 4rem;
   font-size: 1.2rem;
   font-weight: 300;
   background: var(--text-color);
@@ -684,7 +688,7 @@ section {
   }
   .icon {
     padding: 0.8rem;
-    width: 3rem;
+    width: 1.5rem;
     border-radius: 1.3rem;
     transition: all 0.5s ease-in-out;
   }

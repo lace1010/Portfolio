@@ -30,7 +30,7 @@ $("nav").mouseleave(() => {
 // color theme button handlers
 $("#colorThemeButton").click(() => {
   $("#tooltipContainer").css({
-    padding: "1rem 1.5rem 2rem 1.5rem",
+    padding: "1rem 0 2rem 1.5rem",
     width: "18rem",
   });
   setTimeout(() => {

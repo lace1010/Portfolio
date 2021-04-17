@@ -8,6 +8,7 @@
   --navbar-list-color-hover: rgba(255, 255, 255, 0.8);
   --welcome-text-color: rgba(255, 255, 255);
   --header-grey-text-color: rgba(255, 255, 255, 0.6);
+  --resume-text-color: rgb(112, 112, 112);
 }
 
 * {
@@ -21,7 +22,6 @@ html {
   line-height: 1.4;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
   background: whitesmoke;
 }
 
@@ -35,7 +35,7 @@ nav {
 .icon {
   background-color: transparent;
   padding: 0.8rem;
-  width: 3.5rem;
+  width: 2rem;
   border-radius: 1.3rem;
   transition: all 0.5s ease-in-out;
 }
@@ -70,6 +70,7 @@ nav {
   color: var(--navbar-list-color);
   text-decoration: none;
   font-weight: 300;
+  transition: all 0.3s ease;
 }
 
 #navbarLinkSelected {
@@ -205,7 +206,7 @@ nav {
 #welcomeHeader {
   display: block;
   font-size: 3rem;
-  width: 93rem; /* CHANGE WITH MEDIA QUERY*/
+  width: 930px; /* CHANGE WITH MEDIA QUERY*/
   color: var(--welcome-text-color);
 }
 
@@ -213,7 +214,7 @@ nav {
 article {
   font-size: 1.5rem;
   font-weight: 350;
-  color: var(--text-color);
+  color: var(--resume-text-color);
   background: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -222,8 +223,8 @@ article {
 
 #resumeContainer {
   margin: -15rem 5rem 5rem 5rem;
-  box-shadow: 2px 2px 15px darkgrey;
-  width: 93rem; /* CHANGE WITH MEDIA QUERY */
+  box-shadow: 2px 2px 40px -10px rgb(119, 126, 133);
+  width: 930px; /* CHANGE WITH MEDIA QUERY */
 }
 
 #resumeHeader {
@@ -251,7 +252,7 @@ article {
 
 #resumeHeader a:hover {
   color: var(--welcome-text-color);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 #resumeHeader ul {
@@ -278,4 +279,237 @@ article {
 
 #resumeBody {
   background: white;
+  padding: 4rem;
+  font-size: 1.8rem;
+}
+
+#resumeObjectiveMessage {
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.bigResumeSection,
+.job,
+.recentProject {
+  margin-bottom: 3rem;
+}
+
+.recentProjectLink {
+  display: block;
+  font-size: 1rem;
+  color: var(--theme-color);
+  transition: all 0.3s ease;
+}
+
+.recentProjectLink:hover {
+  filter: brightness(80%);
+}
+
+.jobTitleAndCompanyContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.jobLocation {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--theme-color);
+}
+
+.years {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.jobBulletPoints {
+  margin: 1rem 0 0 17px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.jobBulletPoints li {
+  margin-top: 1rem;
+}
+
+#resumeBody h1 {
+  font-size: 2.3rem;
+  color: var(--theme-color);
+}
+
+.bigHR {
+  margin: 2rem 0 2rem 0;
+}
+
+#bigAndSmallContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bigResumeSectionContainer {
+  width: 75%;
+}
+
+#smallResumeSectionContainer {
+  width: 21%;
+}
+
+.smallResumeSection {
+  margin-bottom: 2rem;
+}
+
+/* CHANGE AFTER FINISHING BECAUSE LAURA SAID SO */
+.smallHR {
+  margin: 1rem 0 1rem 0;
+}
+
+#college,
+.interest {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#cert {
+  display: block;
+  margin-top: 0rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.skillsList {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.language {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#suggestion {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--theme-color);
+}
+
+#suggestion:hover {
+  filter: brightness(80%);
+  text-decoration: underline;
+}
+/* Copyright section */
+#copyRightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background: var(--text-color);
+  color: var(--welcome-text-color);
+}
+
+@media (max-width: 950px) {
+  #welcomeHeader {
+    width: 800px;
+  }
+  #resumeContainer {
+    width: 800px;
+  }
+}
+@media (max-width: 820px) {
+  #welcomeHeader {
+    width: 600px;
+  }
+  #resumeContainer {
+    width: 600px;
+  }
+  #bigAndSmallContainer {
+    display: block;
+  }
+  #bigResumeSectionContainer {
+    width: 100%;
+  }
+
+  #smallResumeSectionContainer {
+    width: 100%;
+  }
+
+  /* resume header section */
+  #resumeHeader {
+    font-size: 1.3rem;
+  }
+
+  #headerLinksContainer {
+    font-size: 1.2rem;
+  }
+
+  #personalInfoContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  #personalInfoContainer .headerFontAwesome {
+    font-size: 1.5rem;
+    margin: 0.5rem 0.4rem 0.2rem 0;
+  }
+
+  #headerLinksContainer .headerFontAwesome {
+    margin: 0.5rem 0.4rem 0.2rem 0;
+    font-size: 1.5rem;
+  }
+  #suggestion {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    font-size: 1.2rem;
+  }
+  .icon {
+    padding: 0.8rem;
+    width: 1.5rem;
+    border-radius: 1.3rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* resume section of media query */
+  #welcomeHeader {
+    width: 520px;
+  }
+  #resumeContainer {
+    width: 520px;
+  }
+
+  #resumeHeader {
+    font-size: 1.3rem;
+  }
+
+  #headerLinksContainer {
+    font-size: 0.6rem;
+  }
+
+  #personalInfoContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  #personalInfoContainer .headerFontAwesome {
+    font-size: 1.3rem;
+  }
+
+  #headerLinksContainer .headerFontAwesome {
+    font-size: 1.3rem;
+  }
+
+  #suggestion {
+    font-size: 1.2rem;
+  }
 }
