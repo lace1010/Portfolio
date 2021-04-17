@@ -514,3 +514,27 @@ article {
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 600px) {
+  nav {
+    font-size: 1.2rem;
+  }
+  .icon {
+    padding: 0.8rem;
+    width: 1.5rem;
+    border-radius: 1.3rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* resume section of media query */
+  #welcomeHeader {
+    width: 95vw;
+  }
+  #resumeContainer {
+    width: 95vw;
+  }
+
+  .linkText {
+    display: none;
+  }
+}
