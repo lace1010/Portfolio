@@ -532,6 +532,7 @@ section {
 #projectButton {
   display: block;
   margin: auto;
+  text-decoration: none;
   border: none;
   border-radius: 0.5rem;
   font-size: 1.5rem;
