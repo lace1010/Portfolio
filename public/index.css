@@ -228,6 +228,7 @@ section {
 .welcomeLink {
   color: var(--navbar-color);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .welcomeLink:hover {
@@ -244,6 +245,7 @@ section {
   max-width: 12rem;
   background-color: rgba(0, 0, 0, 0.25);
   color: var(--welcome-text-color);
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
@@ -282,6 +284,7 @@ section {
 #resumeLink {
   color: var(--theme-color);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 #resumeLink:hover {
@@ -546,7 +549,7 @@ section {
 #projectButton:hover {
   text-decoration: none;
   filter: brightness(80%);
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 
 /* FOOTER SECTION */
@@ -584,6 +587,13 @@ section {
 
 .footerLink {
   color: var(--navbar-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  filter: brightness(80%);
+  text-decoration: underline;
 }
 
 #copyRightContainer {

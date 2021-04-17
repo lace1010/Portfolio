@@ -242,7 +242,14 @@ section {
 }
 
 #message a {
+  text-decoration: none;
   color: var(--theme-color);
+  transition: all 0.2s ease;
+}
+
+#message a:hover {
+  text-decoration: underline;
+  filter: brightness(80%);
 }
 
 #messageContainer h3 {

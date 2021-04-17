@@ -335,6 +335,13 @@ section {
 
 .footerLink {
   color: var(--navbar-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  filter: brightness(80%);
+  text-decoration: underline;
 }
 
 .welcomeAndFooterButton {
@@ -346,6 +353,7 @@ section {
   max-width: 12rem;
   background-color: rgba(0, 0, 0, 0.25);
   color: var(--welcome-text-color);
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
