@@ -515,7 +515,7 @@ article {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   nav {
     font-size: 1.2rem;
   }
