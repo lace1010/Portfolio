@@ -114,17 +114,9 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: true,
   mouseDrag: true,
   responsive: {
-    0: {
-      items: 1,
-      stagePadding: 40,
-    },
-    680: {
-      items: 1,
-      stagePadding: 90,
-    },
-    1125: {
-      stagePadding: 0,
-      items: 3,
-    },
+    0: { items: 1, stagePadding: 0 },
+    574: { items: 1, stagePadding: 40 },
+    680: { items: 1, stagePadding: 90 },
+    1125: { stagePadding: 0, items: 3 },
   },
 });
