@@ -295,8 +295,9 @@ article {
 }
 
 .recentProjectLink {
-  display: block;
+  display: block; /* CHANGE THIS SO THE LINK CAN'T BE CLICKED ALL THE WAY TO THE RIGHT */
   font-size: 1rem;
+  width: auto;
   color: var(--theme-color);
   transition: all 0.3s ease;
 }

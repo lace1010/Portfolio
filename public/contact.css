@@ -231,6 +231,14 @@ section {
   border-radius: 50%;
 }
 
+#initials {
+  margin: 5rem 0 3rem;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 300;
+  color: var(--navbar-color);
+}
+
 #messageContainer {
   background: white;
   box-shadow: 1px 1px 3px lightgrey;
