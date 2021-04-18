@@ -93,6 +93,37 @@ nav {
   top: 3.25em;
 }
 
+/* dropdown navbar options*/
+
+#dropDownButton {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  color: var(--welcome-text-color);
+  font-size: 2rem;
+}
+
+.nav-link-list-dropdown {
+  height: 0;
+}
+
+.nav-link-list-dropdown {
+  background: var(--navbar-color);
+  color: var(--welcome-text-color);
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.nav-link-list-dropdown a {
+  width: 0;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
 /* TOOLTIP FOR COLOR CHANGE SECTION  */
 
 #colorThemeButton {
@@ -516,41 +547,8 @@ article {
   }
 }
 
-#dropDownButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1.5rem;
-  color: var(--welcome-text-color);
-  font-size: 2rem;
-}
-
-.nav-link-list-dropdown {
-  height: 0;
-}
-
-#dropDownButton {
-  display: none;
-}
-
-.nav-link-list-dropdown {
-  background: var(--navbar-color);
-  color: var(--welcome-text-color);
-  display: flex;
-  flex-direction: column;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s ease;
-}
-
-.nav-link-list-dropdown a {
-  width: 0;
-  font-size: 13px;
-  margin: 5px 0 5px 10px;
-}
-
 /* Make this 573 in future after testing */
-@media (max-width: 600px) {
+@media (max-width: 573px) {
   nav {
     font-size: 1.2rem;
   }
@@ -559,7 +557,6 @@ article {
     padding: 0.8rem;
     width: 1.5rem;
     border-radius: 1.3rem;
-    transition: all 0.5s ease-in-out;
   }
 
   /* drop down menu change here */
