@@ -27,6 +27,27 @@ $("nav").mouseleave(() => {
   });
 });
 
+// HANDLE NAVBAR WHEN CHANGING TO DROPDOWN MENU FOR PHONE
+
+let dropDown = false;
+$("#dropDownButton").click(() => {
+  if (!dropDown) {
+    $(".nav-link-list-dropdown").css({
+      height: "110px",
+      padding: "10px",
+      "margin-top": "-10px",
+    });
+    dropDown = true;
+  } else {
+    $(".nav-link-list-dropdown").css({
+      height: "0",
+      padding: "0",
+      "margin-top": "0",
+    });
+    dropDown = false;
+  }
+});
+
 // color theme button handlers
 $("#colorThemeButton").click(() => {
   $("#tooltipContainer").css({

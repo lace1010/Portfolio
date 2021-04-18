@@ -55,6 +55,7 @@ nav {
   margin: 0.8rem 0.8rem 0.4rem 0.8rem;
   list-style: none;
 }
+
 .nav-link-list {
   display: flex;
   margin-right: 1rem;
@@ -515,10 +516,45 @@ article {
   }
 }
 
-@media (max-width: 550px) {
+#dropDownButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  color: var(--welcome-text-color);
+  font-size: 2rem;
+}
+
+.nav-link-list-dropdown {
+  height: 0;
+}
+
+#dropDownButton {
+  display: none;
+}
+
+.nav-link-list-dropdown {
+  background: var(--navbar-color);
+  color: var(--welcome-text-color);
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.nav-link-list-dropdown a {
+  width: 0;
+  font-size: 13px;
+  margin: 5px 0 5px 10px;
+}
+
+/* Make this 573 in future after testing */
+@media (max-width: 600px) {
   nav {
     font-size: 1.2rem;
   }
+
   .icon {
     padding: 0.8rem;
     width: 1.5rem;
@@ -526,10 +562,21 @@ article {
     transition: all 0.5s ease-in-out;
   }
 
+  /* drop down menu change here */
+  .nav-link-list {
+    display: none;
+  }
+
+  .nav-link-list-dropdown,
+  #dropDownButton {
+    display: flex;
+  }
+
   /* resume section of media query */
   #welcomeHeader {
     width: 95vw;
   }
+
   #resumeContainer {
     width: 95vw;
   }
