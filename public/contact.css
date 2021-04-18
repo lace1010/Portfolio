@@ -105,6 +105,12 @@ section {
   margin-right: 1.5rem;
   color: var(--welcome-text-color);
   font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+#dropDownButton:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
 }
 
 .nav-link-list-dropdown {
