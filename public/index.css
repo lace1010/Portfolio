@@ -637,11 +637,11 @@ section {
 .footerLink {
   color: var(--navbar-color);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .footerLink:hover {
-  filter: brightness(80%);
+  color: var(--welcome-text-color);
   text-decoration: underline;
 }
 
