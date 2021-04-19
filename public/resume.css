@@ -1,7 +1,7 @@
 :root {
-  --navbar-color: rgba(51, 109, 177, 1);
-  --theme-color: rgb(74, 174, 255);
-  --theme-color-overlay: rgba(51, 139, 255, 0.9);
+  --navbar-color: rgb(53, 73, 83);
+  --theme-color: rgb(86, 119, 135);
+  --theme-color-overlay: rgba(86, 119, 135, 0.9);
   --text-color: rgb(77, 72, 83);
   --icon-color-hover: rgb(33, 71, 114);
   --navbar-list-color: rgba(255, 255, 255, 0.6);
@@ -199,38 +199,37 @@ nav {
   box-sizing: border-box;
 }
 
-#lightBlueColorTheme {
+#colorTheme1 {
+  background-color: rgb(86, 119, 135);
+}
+
+#colorTheme2 {
+  background-color: rgb(117, 110, 126);
+}
+
+#colorTheme3 {
+  background-color: rgb(111, 109, 178);
+}
+
+#colorTheme4 {
+  background-color: rgb(4, 196, 196);
+}
+
+#colorTheme5 {
+  background-color: rgb(160, 83, 119);
+}
+
+#colorTheme6 {
   background-color: rgb(74, 174, 255);
 }
 
-#greenColorTheme {
-  background-color: rgba(144, 238, 144);
+#colorTheme7 {
+  background-color: rgb(61, 174, 132);
 }
 
-#redColorTheme {
-  background-color: red;
+#colorTheme8 {
+  background-color: rgb(58, 112, 206);
 }
-
-#blueColorTheme {
-  background-color: blue;
-}
-
-#goldColorTheme {
-  background-color: gold;
-}
-
-#silverColorTheme {
-  background-color: silver;
-}
-
-#blackColorTheme {
-  background-color: black;
-}
-
-#magentaColorTheme {
-  background-color: magenta;
-}
-
 /* WELCOME SECTION */
 #welcomeSectionContainer {
   background: var(--theme-color);
