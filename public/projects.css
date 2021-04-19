@@ -344,6 +344,18 @@ section {
   border-radius: 3rem;
 }
 
+.githubProjectLink {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  margin: -1rem 0 1rem;
+}
+
+.githubProjectLink:hover {
+  text-decoration: underline;
+}
+
 /* FOOTER SECTION */
 #footerContainer {
   display: flex;
