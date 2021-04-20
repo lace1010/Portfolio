@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hunter Lacefield's professional portfolio">
 
     <!-- add an icon for site in the following href to replace fcc icon-->
     <link
@@ -52,7 +53,7 @@
 	</nav>
 
   <div class="nav-link-list-dropdown">
-    <a class="navbarLinks" id="navbarLinkSelected" href="#">ABOUT</a>
+    <a class="navbarLinks" id="navbarLinkSelectedDropdown" href="#">ABOUT</a>
     <a class="navbarLinks" href="/projects.html">PROJECTS</a>
     <a class="navbarLinks" href="/resume.html">RESUME</a>
     <a class="navbarLinks" href="/contact.html">CONTACT</a>
@@ -252,17 +253,17 @@
 
     <div id="projectDisplayContainer">
       <div class="projectDisplay">
-        <a class="imageContainer" href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank">
+        <a class="imageContainer" href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank" rel="noopener">
           <img class="projectImage" src="https://i.ibb.co/8r1hspx/Anonymous-Board-Messenger.png" alt="Anonymous Board Messenger">
           <div class="imageOverlay">
-            <h3>Anonymous Board Messenger</h3>
+            <h2>Anonymous Board Messenger</h2>
             <p class="projectDetailsText">
               Built this anonymous board messenger by creating various routes on an express app, and manipulating database documents to create a forum with boards, threads and replies. 
               Afterwards, I implemented functional tests to be performed on the API routes.
             </p>
           </div>
         </a>
-        <a class="projectHeader"href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank">
+        <a class="projectHeader"href="https://anonymous-message-board-fcc.herokuapp.com" target="_blank" rel="noopener">
           <h2>Anonymous Board Messenger</h2>
         </a>
         <div class="projectLanguageContainer">
@@ -271,14 +272,14 @@
           <p class="projectLanguage">Node.js</p>
           <p class="projectLanguage">Helmet.js</p>
         </div>
-        <a class="githubProjectLink" href="https://github.com/lace1010/Advanced-Node-and-Express">Github code</a>
+        <a class="githubProjectLink" href="https://github.com/lace1010/Advanced-Node-and-Express" target="_blank" rel="noopener">Github code</a>
       </div>
 
       <div class="projectDisplay">
-        <a class="imageContainer" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank">
+        <a class="imageContainer" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank" rel="noopener">
           <img class="projectImage" src="https://i.ibb.co/xhMXjdR/Issue-Tracker-Home.png" alt="Issue Tracker">
           <div class="imageOverlay">
-            <h3>Issue Tracker</h3>
+            <h2>Issue Tracker</h2>
             <p class="projectDetailsText">
               Created a responsive web app by setting up a database connection and a mongoose model. Then, I implemented some express routes to 
               read, write, modify and delete issue documents, while testing the app with some functional tests.
@@ -286,7 +287,7 @@
           </div>
         </a>
 
-        <a class="projectHeader" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank">
+        <a class="projectHeader" href="https://issue-tracker-fcc-project.herokuapp.com/" target="_blank"rel="noopener" >
           <h2>Issue Tracker</h2>
         </a>
         <div class="projectLanguageContainer">
@@ -295,21 +296,21 @@
           <p class="projectLanguage">Node.js</p>
           <p class="projectLanguage">HTML/CSS</p>
         </div>
-        <a class="githubProjectLink" href="https://github.com/lace1010/Issue-Tracker">Github code</a>
+        <a class="githubProjectLink" href="https://github.com/lace1010/Issue-Tracker" target="_blank" rel="noopener">Github code</a>
       </div>
       
       <div class="projectDisplay">
-        <a class="imageContainer" href="https://react-calculator-with-formula.herokuapp.com" target="_blank">
+        <a class="imageContainer" href="https://react-calculator-with-formula.herokuapp.com" target="_blank" rel="noopener">
           <img class="projectImage" src="https://i.ibb.co/6JqDzLw/Javascript-Calculator-React.png" alt="Sudoku Solver">
           <div class="imageOverlay">
-            <h3>Calculator</h3>
+            <h2>Calculator</h2>
             <p class="projectDetailsText">
               Created a React calculator that can handle basic math functions. It will also display the users formula by manipulating state 
               to show the user what they have done to get their result in formula/espression logic.
             </p>
           </div>
         </a>  
-        <a class="projectHeader" href="https://react-calculator-with-formula.herokuapp.com" target="_blank">
+        <a class="projectHeader" href="https://react-calculator-with-formula.herokuapp.com" target="_blank" rel="noopener">
           <h2>Calculator (React)</h2>
         </a>
         <div class="projectLanguageContainer">
@@ -318,7 +319,7 @@
           <p class="projectLanguage">Express</p>
           <p class="projectLanguage">Node.js</p>
         </div>
-        <a class="githubProjectLink" href="https://github.com/lace1010/Javascript-calculator-react">Github code</a>
+        <a class="githubProjectLink" href="https://github.com/lace1010/Javascript-calculator-react" target="_blank" rel="noopener">Github code</a>
       </div>
     </div>
     <a id="projectButton" href="/projects.html">
@@ -342,7 +343,11 @@
   </div>
 
   <!-- Jquery script link -->
-  <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+  </script>
 
   <!-- jQuerry carousel links -->
   <script src="owl.carousel.js"></script>

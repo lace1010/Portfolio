@@ -83,6 +83,12 @@ section {
   text-decoration: none;
 }
 
+#navbarLinkSelectedDropdown {
+  font-weight: 500;
+  color: var(--welcome-text-color);
+  text-decoration: none;
+}
+
 .navbarLinks:hover {
   color: var(--navbar-list-color-hover);
   text-decoration: none;
@@ -297,7 +303,9 @@ section {
   filter: brightness(80%);
 }
 
-#messageContainer h3 {
+#messageContainer h2 {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
 }

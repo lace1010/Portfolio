@@ -82,6 +82,12 @@ section {
   text-decoration: none;
 }
 
+#navbarLinkSelected {
+  font-weight: 500;
+  color: var(--welcome-text-color);
+  text-decoration: none;
+}
+
 .navbarLinks:hover {
   color: var(--navbar-list-color-hover);
   text-decoration: none;
@@ -263,14 +269,12 @@ section {
 }
 
 .welcomeLink {
-  color: var(--navbar-color);
-  text-decoration: none;
+  color: var(--welcome-text-color);
   transition: all 0.2s ease;
 }
 
 .welcomeLink:hover {
-  color: var(--welcome-text-color);
-  text-decoration: underline;
+  color: var(--navbar-color);
 }
 
 .welcomeAndFooterButton {
@@ -532,7 +536,8 @@ section {
   height: 100%;
 }
 
-.imageOverlay h3 {
+.imageOverlay h2 {
+  font-size: 1.8rem;
   padding: 2rem 2rem 0rem 2rem;
 }
 
@@ -647,14 +652,12 @@ section {
 }
 
 .footerLink {
-  color: var(--navbar-color);
-  text-decoration: none;
+  color: var(--welcome-text-color);
   transition: all 0.2s ease;
 }
 
 .footerLink:hover {
-  color: var(--welcome-text-color);
-  text-decoration: underline;
+  color: var(--navbar-color);
 }
 
 #copyRightContainer {

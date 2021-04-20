@@ -7,7 +7,7 @@
   --navbar-list-color: rgba(255, 255, 255, 0.6);
   --navbar-list-color-hover: rgba(255, 255, 255, 0.8);
   --welcome-text-color: rgba(255, 255, 255);
-  --header-grey-text-color: rgba(255, 255, 255, 0.6);
+  --header-grey-text-color: rgba(255, 255, 255, 0.7);
   --resume-text-color: rgb(112, 112, 112);
 }
 
@@ -75,6 +75,12 @@ nav {
 }
 
 #navbarLinkSelected {
+  font-weight: 500;
+  color: var(--welcome-text-color);
+  text-decoration: none;
+}
+
+#navbarLinkSelectedDropdown {
   font-weight: 500;
   color: var(--welcome-text-color);
   text-decoration: none;
@@ -277,7 +283,8 @@ article {
   font-weight: 700;
 }
 
-#personalInfoContainer h3 {
+#personalInfoContainer h2 {
+  font-size: 1.9rem;
   font-weight: 300;
 }
 
@@ -393,6 +400,10 @@ article {
   width: 75%;
 }
 
+#bigResumeSectionContainer h2 {
+  font-size: 1.8rem;
+}
+
 #smallResumeSectionContainer {
   width: 21%;
 }
@@ -401,6 +412,9 @@ article {
   margin-bottom: 2rem;
 }
 
+.smallResumeSection h2 {
+  font-size: 1.5rem;
+}
 /* CHANGE AFTER FINISHING BECAUSE LAURA SAID SO */
 .smallHR {
   margin: 1rem 0 1rem 0;
