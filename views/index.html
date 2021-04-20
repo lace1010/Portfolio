@@ -22,8 +22,8 @@
     crossorigin="anonymous"
     />
     <!-- owl carousel -->
-    <link rel="stylesheet" href="owl.carousel.css"/>
-    <link rel="stylesheet" href="owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="owl.carousel.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
     <link rel="stylesheet" href="index.css" />
     
   </head>
@@ -347,6 +347,21 @@
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous">
+  </script>
+
+  <!-- Add this script to pass a lighthouse performance optimization audit (gets rid of preventDefault for jQuery) -->
+  <script>
+    // Passive event listeners
+    jQuery.event.special.touchstart = {
+        setup: function( _, ns, handle ) {
+            this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.touchmove = {
+        setup: function( _, ns, handle ) {
+            this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
   </script>
 
   <!-- jQuerry carousel links -->
