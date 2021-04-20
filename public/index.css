@@ -82,7 +82,7 @@ section {
   text-decoration: none;
 }
 
-#navbarLinkSelected {
+#navbarLinkSelectedDropdown {
   font-weight: 500;
   color: var(--welcome-text-color);
   text-decoration: none;
