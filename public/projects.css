@@ -36,7 +36,7 @@ section {
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 0.8rem;
   color: var(--welcome-text-color);
   transition: all 0.5s ease-in-out;
@@ -44,7 +44,7 @@ section {
 
 .icon:hover {
   filter: brightness(70%);
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .nav-social-list {
@@ -485,24 +485,11 @@ section {
     font-size: 1.2rem;
   }
   .icon {
-    padding: 0.8rem;
-    width: 1.5rem;
-    border-radius: 1.3rem;
-    transition: all 0.5s ease-in-out;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 573px) {
-  nav {
-    font-size: 1.2rem;
-  }
-
-  .icon {
-    padding: 0.8rem;
-    width: 1.5rem;
-    border-radius: 1.3rem;
-  }
-
   /* drop down menu change here */
   .nav-link-list {
     display: none;
