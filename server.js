@@ -53,8 +53,8 @@ app.post("/email", (req, res) => {
 
   // The email that is sending the form info to my email
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
+    host: "smtp-mail.outlook.com",
+    port: 587,
     secure: true,
     auth: {
       user: process.env.EMAIL,
@@ -81,3 +81,6 @@ app.post("/email", (req, res) => {
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
+// pemcyv-totpoW-dazdu8
+
+// one time password sbqnutiwjqcmatdz
