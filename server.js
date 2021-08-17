@@ -55,7 +55,7 @@ app.post("/email", (req, res) => {
   const transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com",
     port: 587,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
@@ -63,7 +63,7 @@ app.post("/email", (req, res) => {
   });
 
   const mailOptions = {
-    from: req.body.email,
+    from: "portfolio-contac@outlook.com",
     to: "lace1010@gmail.com",
     subject: req.body.name + " has contacted you via portfolio contact page",
     html: output,
