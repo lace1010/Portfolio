@@ -425,11 +425,11 @@ article {
   font-weight: 300;
 }
 
-#cert {
+.cert {
   display: block;
-  margin-top: 0rem;
-  font-size: 1.2rem;
-  font-weight: 200;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .skillsList {
