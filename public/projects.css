@@ -465,7 +465,7 @@ section {
   #projectDisplayContainer {
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    width: 60vw;
     margin-bottom: -4rem;
   }
 
@@ -488,6 +488,9 @@ section {
   }
   .icon {
     font-size: 1.2rem;
+  }
+  #projectDisplayContainer {
+    width: 70vw;
   }
 }
 

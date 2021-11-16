@@ -494,14 +494,15 @@ section {
 }
 
 #projectDisplayContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
-  grid-gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
   margin: 3rem 4rem 6rem 4rem;
   max-width: 100rem; /* change to flex and flex-direction: column with media query*/
 }
 
 .projectDisplay {
+  flex: 1;
+  margin: 0 20px;
   display: block;
   background: white;
   box-shadow: 2px 2px 5px lightgrey;
